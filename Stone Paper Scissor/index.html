@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissor Game</title>
+    <style>
+        h1,h2{
+            text-align: center;
+        }
+        h1{
+            /* background: linear-gradient(to right, red, yellow, green, blue, purple); */
+            background: linear-gradient(90deg, rgba(177,101,19,1) 0%, rgba(158,146,32,1) 15%, rgba(187,179,35,1) 30%, rgba(119,161,27,1) 45%, rgba(146,194,38,1) 60%, rgba(33,187,108,1) 75%, rgba(24,200,163,1) 88%);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        h3{
+            /* background: linear-gradient(to right, orange,yellow); */
+            background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .container{
+            display: flex;
+            gap: 2rem;
+        }
+        .container > img{
+            height: 150px;
+            width: 200px;
+        }
+        #result{
+            margin-top: 50px;
+        }
+        #computerResult, #playerResult{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stone Paper Scissor Game</h1>
+    <h3>Choose any one</h3>
+    
+    <div class="container">
+        <img src="https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?cs=srgb&dl=pexels-scottwebb-1029604.jpg&fm=jpg"
+         id="stone" alt="Stone">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/012/981/791/small_2x/old-parchment-paper-sheet-vintage-aged-or-texture-background-png.png"
+         id="paper" alt="Paper">
+        <img src="https://static.vecteezy.com/system/resources/previews/011/895/865/non_2x/scissors-set-rainbow-colors-scissor-clipart-in-flat-style-isolated-on-white-background-school-supplies-vector.jpg"
+         id="scissor" alt="Scissor">
+    </div>
+
+    <h2 id="result"></h2>
+    <p id="youChoose"></p>
+    <p id="computerChoose"></p>
+    <p id="playerResult"></p>
+    <p id="computerResult"></p>
+    <script src="index.js"></script>
+</body>
+</html>
